@@ -55,15 +55,40 @@ main {
 }
 
 .card {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.card p {
+    flex: 1;
+    margin-right: 20px;
+}
 
 .card img {
-    width: 200px;
+    flex: 0 0 auto;
+    max-width: 30%;
+}
+
+.image_and_paragraph {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.image_and_paragraph img f{
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.image_and_paragraph p {
+    margin-right: 10px;
+}
+
+.image_and_paragraph2 img {
+    justify-content: space-around;
 }
 
 footer {
