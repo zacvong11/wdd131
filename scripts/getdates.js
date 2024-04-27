@@ -1,7 +1,7 @@
 const currentYear = new Date().getFullYear();
 
-document.querySelector('footer p:first-of-type').textContent += ` ${currentYear}`;
-
+const footer = document.querySelector('footer');
+footer.querySelector('#year').textContent = `©️${currentYear}, Zac Vongphakdy, USA`;
 
 const lastModifiedDate = new Date(document.lastModified);
 
