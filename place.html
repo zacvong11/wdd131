@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Hero Image">
+            </picture>
+            <h1>Welcome to the Place Page</h1>
+        </section>
+        <section class="content">
+            <article>
+                <h2>About This Place</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel velit augue.</p>
+            </article>
+            <article>
+                <h2>Services Offered</h2>
+                <p>Ut auctor nulla id orci vestibulum, in ullamcorper sapien suscipit.</p>
+            </article>
+            <article>
+                <h2>Contact Information</h2>
+                <p>Phasellus eget purus eu urna interdum consequat non eu ante.</p>
+            </article>
+            <article class="weather">
+                <h2>Weather</h2>
+                <p>Sunny, 25°C</p>
+                <p>Wind: 10 km/h</p>
+                <p>Windchill: <span id="windchill">N/A</span></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>$Zac Vongphakdy$ Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
