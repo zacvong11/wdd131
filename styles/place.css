@@ -67,10 +67,10 @@ header h1 {
 .weather-icon {
     display: inline-block;
     margin-left: 10px;
-    width: 24px;
-    height: 24px;
+    width: 100px;
+    height: 10px;
     background-image: url('images/weather-icon.svg');
-    background-size: cover;
+    background-size: contain;
 }
 
 footer {
@@ -100,5 +100,3 @@ footer p {
         margin: 10px 0;
     }
 }
-
-</style>
