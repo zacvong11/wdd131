@@ -1,32 +1,24 @@
-document.addEventListener("DOMContentLoaded", function() {
-   
-    function calculateWindChill(temperature, windSpeed) {
-       
-        return (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)).toFixed(2);
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to calculate wind chill
+    function calculateWindChill(temp, windSpeed) {
+        if (temp <= 10 && windSpeed > 4.8) {
+            return (13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)).toFixed(1) + "°C";
+        } else {
+            return "N/A";
+        }
     }
 
-   
-    const temperature = 25; // Celsius
-    const windSpeed = 10; // km/h
+    // Set wind chill value
+    const temp = 10; // Example temperature in Celsius
+    const windSpeed = 5; // Example wind speed in km/h
+    const windChillElement = document.getElementById("windchill");
+    windChillElement.textContent = calculateWindChill(temp, windSpeed);
 
-  
-    const isWindChillApplicable = temperature <= 10 && windSpeed > 4.8;
-
-   
-    const windchillElement = document.getElementById("windchill");
-    if (isWindChillApplicable) {
-        const windChill = calculateWindChill(temperature, windSpeed);
-        windchillElement.textContent = `${windChill} °C`;
-    } else {
-        windchillElement.textContent = "N/A";
-    }
-
-    const currentYearElement = document.getElementById("currentYear");
+    // Set the current year in the footer
     const currentYear = new Date().getFullYear();
-    currentYearElement.textContent = currentYear;
+    document.getElementById('year').textContent = `©️ ${currentYear}, Zac Vongphakdy, USA`;
 
-  
-    const lastModifiedElement = document.getElementById("lastModified");
-    const lastModifiedDate = document.lastModified;
-    lastModifiedElement.textContent = lastModifiedDate;
+    // Set last modified date in the footer
+    const lastModifiedDate = new Date(document.lastModified);
+    document.getElementById('lastModified').textContent = `Last modified: ${lastModifiedDate.toLocaleString()}`;
 });

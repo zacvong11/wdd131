@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+    <title>Thailand</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <meta name="description" content="WDD 131 - Country Page">
+    <meta name="author" content="Zac Vongphakdy">
+    <title>WDD 131 - Dynamic Web Fundamentals - Zac Vongphakdy</title>
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Thailand</h1>
     </header>
     <main>
         <section class="hero">
             <picture>
                 <source media="(min-width: 768px)" srcset="images/hero-large.webp">
-                <img src="images/hero-small.webp" alt="Hero Image">
+                <source media="(max-width: 767px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="Thai Buddhist Temple">
             </picture>
-            <h1>Welcome to the Place Page</h1>
-        </section>
-        <section class="content">
-            <article>
-                <h2>About This Place</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel velit augue.</p>
-            </article>
-            <article>
-                <h2>Services Offered</h2>
-                <p>Ut auctor nulla id orci vestibulum, in ullamcorper sapien suscipit.</p>
-            </article>
-            <article>
-                <h2>Contact Information</h2>
-                <p>Phasellus eget purus eu urna interdum consequat non eu ante.</p>
-            </article>
-            <article class="weather">
-                <h2>Weather</h2>
-                <p>Sunny, 25°C</p>
-                <p>Wind: 10 km/h</p>
-                <p>Windchill: <span id="windchill">N/A</span></p>
-            </article>
+            <div class="info">
+                <div class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 513,121 sq km</li>
+                        <li><strong>Population:</strong> 71,885,799</li>
+                        <li><strong>Capital:</strong> Bangkok</li>
+                        <li><strong>Languages:</strong> Thai</li>
+                        <li><strong>Currency:</strong> Baht</li>
+                        <li><strong>Time Zone:</strong> GMT+7</li>
+                        <li><strong>Calling Code:</strong> +66</li>
+                        <li><strong>Internet TLD:</strong> .th</li>
+                    </ul>
+                </div>
+                <div class="weather">
+                    <h2>Weather <span class="weather-icon"></span></h2>
+                    <p><strong>Temperature:</strong> 10°C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> 5 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span>$Zac Vongphakdy$ Last modified: <span id="lastModified"></span></p>
+        <p id="year">©️ Zac Vongphakdy, USA</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
