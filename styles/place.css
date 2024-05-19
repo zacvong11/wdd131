@@ -18,7 +18,6 @@ body {
 
 header {
     background-color: var(--primary-color);
-    /* Example usage of global variable */
     color: white;
     text-align: center;
     padding: 20px 0;
