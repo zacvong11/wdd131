@@ -8,7 +8,11 @@ const temples = [
     { templeName: "Mexico City Mexico", location: "Mexico City, Mexico", dedicated: "1983, December, 2", area: 116642, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" },
     { templeName: "Salt Lake", location: "Salt Lake City, Utah, United States", dedicated: "1893, April, 6", area: 253015, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake/400x250/salt-lake-temple-lds-412121-wallpaper.jpg" },
     { templeName: "Hong Kong China", location: "Hong Kong, China", dedicated: "1996, May, 26", area: 21648, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/400x250/hong-kong-china-temple-lds-178318-wallpaper.jpg" },
-    { templeName: "Kyiv Ukraine", location: "Kyiv, Ukraine", dedicated: "2010, August, 29", area: 21737, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-lds-728221-wallpaper.jpg" }
+    { templeName: "Kyiv Ukraine", location: "Kyiv, Ukraine", dedicated: "2010, August, 29", area: 21737, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-lds-728221-wallpaper.jpg" },
+    { templeName: "Adelaide Australia Temple", location: "Adelaide, Australia", dedicated: "2000, June, 15", area: 10700, imageUrl: "https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" },
+    { templeName: "Arequipa Peru Temple", location: "Arequipa, Peru", dedicated: "2019, December, 15", area: 26969, imageUrl: "https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" },
+    { templeName: "Barranquilla Colombia Temple", location: "Barranquilla, Columbia", dedicated: "2018, December, 9", area: 25349, imageUrl: "https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" }
+
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
