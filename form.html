@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="description" content="WDD 131 - Form">
+    <meta name="author" content="Zac Vongphakdy">
+    <title>WDD 131 - Form - Zac Vongphakdy</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+      
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+             
+            </select>
+            
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="installation-date">Date of Purchase</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                <label for="ease-of-use">Ease of Use</label>
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
+            </fieldset>
+
+            <label for="written-review">Written Review (Optional)</label>
+            <textarea id="written-review" name="written-review"></textarea>
+
+            <label for="user-name">Your Name (Optional)</label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p id="year">©️Zac Vongphakdy, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
