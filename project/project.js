@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Existing gallery code
     const galleryImages = document.querySelector('.gallery-images');
     const images = Array.from(document.querySelectorAll('.gallery-images img'));
     const prevButton = document.querySelector('.prev');
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateGallery() {
         const totalImages = images.length;
         const imagesToShow = 5;
-        const spacing = 10; 
+        const spacing = 10;
         const imageWidth = (100 / imagesToShow) - (spacing / imagesToShow * 2);
 
         const visibleImages = images.slice(currentIndex, currentIndex + imagesToShow);
@@ -42,6 +43,27 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.addEventListener('click', showNextImage);
     prevButton.addEventListener('click', showPrevImage);
 
-    setInterval(showNextImage, 4000); 
-    updateGallery(); 
+    setInterval(showNextImage, 3000);
+    updateGallery();
+
+    // New form handling code for register.html
+    const form = document.getElementById('registration-form');
+    if (form) {
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const species = document.getElementById('species').value;
+
+            const registrationData = {
+                name,
+                email,
+                species
+            };
+
+            localStorage.setItem('registrationData', JSON.stringify(registrationData));
+            alert('Registration Successful!');
+        });
+    }
 });
