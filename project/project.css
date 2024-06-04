@@ -16,9 +16,9 @@ header {
 
 header .radial-image {
     position: absolute;
-    top: 40px; 
-    left: 20px;
-    width: 100px;
+    top: 60px; 
+    left: 30px;
+    width: 150px;
     height: auto;
     z-index: 1;
 }
