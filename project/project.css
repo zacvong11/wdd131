@@ -8,7 +8,8 @@ body {
     background-color: #EEF4D4;
     color: #333;
 }
-
+header h1 {
+display: none;
 }
 header {
     background-color: #688B58;
@@ -162,7 +163,7 @@ main {
     display: none;
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:800px) {
     .mobile-only {
         display: block;
     }
