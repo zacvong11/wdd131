@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.addEventListener('click', showNextImage);
     prevButton.addEventListener('click', showPrevImage);
 
-    setInterval(showNextImage, 3000);
+    setInterval(showNextImage, 4000);
     updateGallery();
 
     // New form handling code for register.html
@@ -67,3 +67,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+// new additions

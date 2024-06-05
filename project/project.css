@@ -1,3 +1,6 @@
+@media screen and (max-width: 800px){
+    
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -16,9 +19,9 @@ header {
 
 header .radial-image {
     position: absolute;
-    top: 60px; 
-    left: 30px;
-    width: 150px;
+    top: 20px;
+    left: 10px;
+    width: 50px;
     height: auto;
     z-index: 1;
 }
@@ -37,6 +40,7 @@ header nav ul {
     justify-content: flex-end;
     padding: 0;
     margin: 0;
+;
 }
 
 header nav ul li {
@@ -46,7 +50,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: .75rem;
     padding: 0.5rem 1rem;
     background-color: #FF661A;
     border-radius: 5px;
@@ -153,4 +157,76 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}.gallery, .banner {
+    display: none;
 }
+
+/* CSS for Mobile */
+@media screen and (max-width: 500px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    header .radial-image {
+        top: 20px;
+        left: 10px;
+        width: 50px;
+    }
+
+    header nav ul {
+        /* flex-direction: row;
+        display: flexbox; */
+        background-color: #688B58;
+        /* position: absolute; */
+        top: 65px;
+        right: 0;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    header nav ul li a {
+        padding: 1rem;
+        font-size: 1rem;
+        display: flex;
+        margin-top: auto;
+
+
+    }
+/* 
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: #FF661A;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: white;
+    } */
+}
+
+/* CSS for Desktop View */
+@media screen and (min-width: 501px) {
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+}
+
+.rotating-gallery img {
+    display: none;
+}
+
+.rotating-gallery img.visible {
+    display: block;
+}
+/* new additions */
