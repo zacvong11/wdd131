@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     
 
 body {
@@ -9,6 +9,7 @@ body {
     color: #333;
 }
 
+}
 header {
     background-color: #688B58;
     padding: 1rem 0;
@@ -112,7 +113,7 @@ main {
 }
 
 .next {
-    right: 10px; /* Adjust based on requirement */
+    right: 10px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -161,8 +162,7 @@ main {
     display: none;
 }
 
-/* CSS for Mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width:1150px) {
     .mobile-only {
         display: block;
     }
@@ -200,33 +200,6 @@ main {
 
 
     }
-/* 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        background-color: #FF661A;
-        padding: 0.5rem;
-        border-radius: 5px;
-        color: white;
-    } */
-}
-
-/* CSS for Desktop View */
-@media screen and (min-width: 501px) {
-    .desktop-only {
-        display: block;
-    }
-
-    .mobile-only {
-        display: none;
-    }
-}
-
-.rotating-gallery img {
+header h1 {
     display: none;
 }
-
-.rotating-gallery img.visible {
-    display: block;
-}
-/* new additions */
